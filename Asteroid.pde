@@ -1,22 +1,49 @@
+class Asteroid extends Floater{
+    double myX, myY, mySpeed, myAngle;
+    int myColor; 
+    Asteroid(){
+
+    }
+    public void move(){
+
+    	
+    }
+
+
+
+
+}
+
+
+
+
+
+
+/*
 class Star
 {
 	//your code here
-	double myX, myY;
+	double myX, myY, mySpeed, myAngle;
 	int myColor; 
 	Star(){
+		myAngle = ((Math.random() * 2) + 1)* Math.PI;
+		mySpeed = (Math.random() * 2) + 1;
 		myColor = color(255, 255, 0);
-		myX = (int)(Math.random() * 500);
-		myY = (int)(Math.random() * 500);
+		myX = myY = 250;
 	} 
+	void move(){
+		myX += (Math.cos(myAngle) * mySpeed);
+		myY += (Math.sin(myAngle) * mySpeed);
+
+	}
 	void show(){
 		fill (myColor);
 		stroke(0);
-		ellipse((int)myX, (int)myY, 5, 5);
+		ellipse((int)myX, (int)myY, 10, 10);
 
 	}
 }
 
-/*
 class OddballStar extends Star//inherits from Particle
 {
 	//your code here
@@ -39,5 +66,5 @@ class OddballStar extends Star//inherits from Particle
 		ellipse((int)myX, (int)myY, 200, 200);
 	}
 }
-*/
 
+*/
